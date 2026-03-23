@@ -1,18 +1,71 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Drop down list</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>drop down list</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      span {
+        padding: 10px 20px;
+        cursor: pointer;
+      }
+      .header {
+        /* position: relative; */
+        margin-top: 10px;
+        padding: 10px;
+        /* border: 1px solid; */
+      }
+      /* .header:hover > .hoverDiv{
+        display: block;
+      } */
+      .parentSpan:hover > .hoverDiv{
+        display: block;
+       }
+      
+      .hoverDiv {
+        top: 32px;
+        position: absolute;
+        right: -26px;
+        border: 1px solid black;
+        padding: 10px 20px;
+        text-align: center;
+        /* display: block; */
+        display: none;
+        width: 150px;
+      }
+      .hoverDiv p {
+        padding: 10px 0px;
+      }
+      .parentSpan {
+        position: relative;
+      }
+
+      .hoverDiv>p:hover{
+        background-color: aliceblue;
+      }
+    </style>
+  </head>
+  <body>
     <div class="maindiv">
-        <div class="header"></div>
+      <div class="header">
         <span>services</span>
-        <span>indusry</span>
-        <span>about us</span>
-        <span>contact us</span>
-        <span class="parent span">company</span>
+        <span>industry</span>
+        <span>about us </span>
+        <span>contact us </span>
+        <span class="parentSpan"
+          >company
+          <div class="hoverDiv">
+            <p>Who we are</p>
+            <p>Leadership</p>
+            <p>Blog</p>
+          </div>
+        </span>
+      </div>
     </div>
-</body>
+  </body>
 </html>

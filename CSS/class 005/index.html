@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>drop down image</title>
+    <style>
+      * {
+        margin: 0px;
+        padding: 0px;
+        box-sizing: border-box;
+      }
+      .contentdiv{
+        display: flex;
+        align-items: center;
+      }
+      .parentspan>img{
+        width: 66px;
+        /* border: 1px solid; */
+      }
+      .parentspan:hover .hoverdiv{
+        display: block;
+        
+      }
+      .parentspan{
+        position: relative;
+      }
+      .hoverdiv>img{
+        width: 300px;
+      }
+      .hoverdiv {
+        position: absolute;
+        /* left: 68px; */
+        display: none;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="maindiv">
+      <div class="contentdiv">
+        <span>check this:</span>
+        <span class="parentspan">
+          <img
+            src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aXNsYW5kfGVufDB8fDB8fHww"
+            alt="iland"
+            width="100%"
+          />
+          <div class="hoverdiv">
+            <img
+              src="https://images.unsplash.com/photo-1559128010-7c1ad6e1b6a5?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aXNsYW5kfGVufDB8fDB8fHww"
+              alt="iland"
+              width="100%"
+            />
+          </div>
+
+        </span>
+      </div>
+    </div>
+  </body>
+</html>
