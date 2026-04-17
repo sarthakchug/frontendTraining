@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spinner</title>
+    <style>
+        .spinner{
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          font-size: 20px;
+          width: 50px;
+          border-radius: 50%;
+          height: 50px;
+          margin: auto;
+          background-color: aqua;
+          border: 1px solid black;
+          border-top: 5px solid black;
+          animation: sarthak 2s linear infinite reverse;
+      }
+
+      @keyframes sarthak{
+        from{
+            transform: rotate(0deg);
+        }
+        to{
+            transform: rotate(360deg);
+        }
+      }
+
+      .spinner:hover{
+        transform: rotate(360deg);
+      }
+    </style>
+</head>
+<body>
+    <div class="spinner">s</div>
+</body>
+</html>

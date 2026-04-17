@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>animation transform</title>
+    <style>
+        div{
+            width: 50px;
+            height: 50px;
+            background-color: brown;
+            border: 1px solid black; 
+            animation: move 2s linear infinite;
+            /* animation: forwards; */
+            /* animation: backwards; */
+            /* animation: both; */
+            /* animation: alternate;    >    duration */
+            /* animation: alternate-reverse  >    duration; */
+            /* box-shadow: 13px 8px 16px rgb(154, 24, 24); */
+            /* inset: ; */
+            /* text-shadow: 2px 2px 6px  black ; */
+        }
+                                                                     /* by transform */
+        @keyframes move {
+            0%{
+                transform: translate(0px , 0px)
+            }
+            25%{
+                transform: translate(1470px , 0px)
+            }
+            50%{
+                transform: translate(1470px , 660px)
+            }
+            75%{
+                transform: translate(0px , 660px)
+            }
+            100%{
+                transform: translate(0px , 0px)
+            }
+        }
+                                                  /* by position */
+        /* @keyframes move {
+            0%{
+                position: relative;
+                top: 0px;
+                left: 0px;
+            }
+            25%{
+                position: relative;
+                top: 0px;
+                left: 1470px;
+
+            }
+            50%{
+                position: relative;
+                top: 660px;
+                left:1470px;
+
+            }
+            75%
+            {
+                position: relative;
+                top: 660px;
+                left: 0px;
+            }
+            100%{
+                position: relative;
+                top: 0px;
+                left: 0px;
+            } 
+        } */
+    </style>
+</head>
+<body>
+    <div>hello</div>
+</body>
+</html>
