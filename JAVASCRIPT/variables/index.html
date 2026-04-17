@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>variables</title>
+</head>
+<body>
+    
+</body>
+<script>
+                                        // three keys- var let const 
+                                        // block scope - ignores var but follows let and const
+    // var a=10;
+    // console.log('a: ', a);     //10
+
+    // if(true){
+    //     var a=20;
+    //     console.log('a: ', a);      //20
+    // }
+    // console.log('a: ', a);         //20
+
+                                        // function scope - follows var,let,const
+                                        
+    let x=10;
+    console.log('x: ', x);     //10
+
+    function show(){
+       let x=20;
+       console.log('x: ', x);       //20
+    }
+    show()
+
+    console.log('x: ', x);     //10
+
+</script>
+</html>
