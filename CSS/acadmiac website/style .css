@@ -1,0 +1,845 @@
+        *{
+            margin: 0px;
+            padding: 0px;
+            box-sizing: border-box;
+        }
+                                                    /* header style section */
+        .header{
+            display: flex;
+            justify-content: space-between;
+            /* border: 1px solid; */
+            background-color: #003376;
+            padding: 7px 50px 12px 50px;
+        }
+        .contactdiv{
+            display: flex;
+            align-items: center;
+        }
+        .callicon{
+            cursor: pointer;
+            margin: 3px 8px 0px 0px;
+        }
+        .emailicon{
+            cursor: pointer;
+            margin: 4px 7px 0px 0px;
+        }
+        .callno{
+            cursor: pointer;
+            color: white;
+            font-size: 19px;
+        }
+        .email{
+            cursor: pointer;
+            color: white;
+            font-size: 19px;
+        }
+        .middlelinediv{
+           border: 1px solid;
+           height: 30px;
+           color: white;
+           margin: 0px 10px;
+        }
+        .enquirybutton{
+            /* border: 1px solid; */
+            background-color: #bc274b;
+            color: white;
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            padding: 0px 30px;
+            margin: -12px;
+            font-size: 17px;
+        }
+        .enquirybutton:hover{
+            background-color: #545454;
+        }
+                                                  /* navbar style section */
+        .navbar{
+            display: flex;
+            justify-content: space-between;
+            padding: 23px 50px;
+            background-color: #ffffff;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+        }
+        .logodiv{
+            width: 14%;
+        }
+        .detailsection>ul{
+            list-style-type: none;
+            display: flex;
+            font-size: 19px;
+            gap: 45px;
+            color: #003376;
+            font-weight: bold;
+        }
+        .detailsection>ul>li{
+            transition: all 0.5s ease;
+        }
+        .detailsection>ul>li:hover{
+            color:#c7395b;
+            cursor: pointer;
+        }
+        .detailsection>ul>li i{
+            transition: all 0.5s ease;
+        }
+        .detailsection>ul>li:hover i{
+            color:#c7395b !important ;
+            cursor: pointer;
+        }   
+        .detailsection>ul>a{
+            text-decoration: none;
+            color: #003376;
+            transition: all 0.5s ease;
+        }
+        .detailsection>ul>a:hover{
+            color: #c7395b;
+        }
+                           /* drop down style */
+        .moreparentSpan{
+            position: relative;
+        }
+        .moreparentSpan >span{
+            position: relative;
+            top: 3px;
+            left: 6px;
+        }
+        .morehoverdiv{
+            /* border: 1px solid; */
+            display: none;
+            border-top:3px solid #bc274b;
+            border-radius: 5px;
+            position: absolute;
+            top: 30px;
+            width: 223px;
+            background-color: #ffffff;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        .morehoverdiv p{
+            padding: 18px 0px 17px 17px;
+        }
+        .middleblankdiv{
+            width: auto;
+            border: 0.5px solid #e6f0fa;
+            opacity: 0.7;
+        }
+        .moreparentSpan:hover .morehoverdiv{
+            display: block;
+        }
+        .courseparentSpan{
+            position: relative;
+        }
+        .coursehoverdiv{
+            /* border: 1px solid; */
+            display: none;
+            border-top:3px solid #bc274b;
+            border-radius: 5px;
+            position: absolute;
+            top: 30px;
+            width: 280px;
+            background-color: #ffffff;
+            box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+        }
+        .coursehoverdiv p{
+            padding: 17px 10px 17px 10px;
+        }
+        .middleblankdiv{
+            width: auto;
+            border: 0.5px solid #e6f0fa;
+            opacity: 0.7;
+        }
+        .courseparentSpan >span{
+            position: relative;
+            top: 3px;
+            left: 6px;
+        }
+        .courseparentSpan:hover .coursehoverdiv{
+            display: block;
+        }
+                                  /* aboutstyle section */
+        .aboutsection{
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: space-around;
+            background-color:#f1f5f9;
+        }
+       .mainexamdiv,.maincoursediv{
+            /* border: 1px solid; */
+            width: 24%;
+            background-color: #ffffff;
+            border-radius: 24px;
+            border-top: 3px solid #1e316f;
+            margin: 66px 0px;
+            box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+       }
+       .mainexamdiv{
+            position: relative;
+            left: 50px;
+       }
+       .maincoursediv{
+            position: relative;
+            right: 50px;
+       }
+       .examdiv,.coursediv{
+            /* border: 1px solid; */
+            margin: 20px;
+       }
+       .examheading>ul{
+            border: 1px solid;
+            padding: 5px 0px 5px 21px;
+            width: 174px;
+            border-radius: 13px;
+            font-size: 13px;
+            background-color: #eaeff4;
+            color: #144381;
+            font-weight: bold;
+       }
+       .programdiv,.futurediv{
+            font-size: 26px;
+            width: fit-content;
+            margin-top: 30px;
+            font-weight: bold;
+       }
+       .programdiv>ul{
+            /* border: 1px solid; */
+            list-style-type: none;
+            color: #003376;
+       }
+       .programdiv>ul>li:last-child{
+            color: #c32b4f;
+       }
+       .aboutprogram,.aboutcourses>p{
+            color: #718096;
+            /* border: 1px solid; */
+            width: 94%;
+            margin-top: 10px;
+       }
+       .examname,.coursename{
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
+       }
+       /* .arrowicon i{
+            color: #718096;
+       } */
+       .neet,.digital{
+            display: flex;
+            gap: 10px;
+            border: 1px solid#ecf0f4;
+            border-radius: 11px;
+            padding: 17px 0px 17px 58px;
+            margin-top: 20px;
+            background-color: #f9fafb;
+            transition: all 0.5s ease;
+       }
+       .jeemain,.Graphic{
+            display: flex;
+            gap: 10px;
+            border: 1px solid#ecf0f4;
+            border-radius: 11px;
+            padding: 10px 0px 10px 58px;
+            /* margin-top: 20px; */
+            background-color: #f9fafb;
+            transition: all 0.5s ease;
+       }
+       .jeeadvance,.ai{
+            display: flex;
+            gap: 10px;
+            border: 1px solid#ecf0f4;
+            border-radius: 11px;
+            padding: 10px 0px 10px 58px;
+            /* margin-top: 20px; */
+            background-color: #f9fafb;
+            transition: all 0.5s ease;
+       }
+       .foundation,.iit,.neettest,.front-end,.java,.cloud{
+            display: flex;
+            gap: 10px;
+            border: 1px solid#ecf0f4;
+            border-radius: 11px;
+            padding: 17px 0px 17px 58px;
+            /* margin-top: 20px; */
+            background-color: #f9fafb;
+            transition: all 0.5s ease;
+       }
+       .detail{
+            color: #003376;
+            font-weight: bold;
+            font-size: 15px;
+            width: 224px;
+       }
+       .hoverdiv:hover{
+            border: 1px solid#c73a5b;
+            background-color: #fdf7f8;
+            cursor: pointer;
+            /* position: relative;
+            left: 3px; */
+            transform: translate(5px);
+       }  
+       .hoverdiv i{
+        transition: all 0.1s ease;
+       }
+       .hoverdiv:hover i{
+        color:#c82c50 !important;
+        transform: translate(2px);
+       }
+       .courseheading>ul{
+            border: 1px solid;
+            padding: 5px 0px 5px 20px;
+            width: 195px;
+            border-radius: 13px;
+            font-size: 13px;
+            background-color: #f9e9ed;
+            color: #c73a5b;
+            font-weight: bold;
+       } 
+       .futurediv>ul{
+            /* border: 1px solid; */
+            list-style-type: none;
+            color: #003376;
+       }
+       .futurediv>ul>li:last-child{
+            color: #c32b4f;
+       } 
+                                  /* about-review style section    */
+       .mainreviewdiv{
+            /* border: 1px solid; */
+            margin: 110px 0px;
+            width: 30%;
+        }
+        .maintrusteddiv{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        .trusted{
+            border: 1px solid;
+            padding: 10px 0px 10px 15px;
+            width: 233px;
+            border-radius: 25px;
+            font-size: 15px;
+            background-color: #f9e9ed;
+            color: #c73a5b;
+            font-weight: bold;
+        }
+        .reviewheading{
+            /* border: 1px solid; */
+            width: auto;
+            height: 160px;
+            text-align: center;
+            font-size: 19px;
+            display: flex;
+            align-items: end;
+            justify-content: center;
+        }
+        .reviewheading>h1>span{
+            color: #003376;
+        }
+        .reviewheading>h1>p>span{
+            color: #003376;
+        }
+        .reviewheading>h1>p{
+            color: #da3d62;
+        }
+        .onediv>p{
+            color: #434954;
+            font-size: 20px;
+            text-align: center;
+            padding: 12px;
+        }
+        .reviewdetail>p{
+            color: #636e7f;
+            font-size: 17px;
+            text-align: center;
+            line-height: 24px;
+        }
+        .maincoursesbutton{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .coursesbutton{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 8px;
+            width: 194px;
+            height: 48px;
+            background-color: #c5294e;
+            color: white;
+            border-radius: 12px;
+            transition: all 0.3s ease;
+            font-weight: bold;
+            margin: 27px;
+            /* box-shadow: #c5294e 0px 3px 8px; */
+        }
+        .coursesbutton:hover{
+            transform: translate(0px , -2px);
+            cursor: pointer;
+            box-shadow: #c5294e 0px 3px 15px;
+        }
+        .coursesbutton i{
+            transition: all 0.2s ease;
+        }
+        .coursesbutton:hover i{
+            transform: translate(3px);
+        }
+        .joindiv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding-top: 10px;
+        }
+        .joindiv>span{
+            color: #89929d;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        .circlediv{
+            display: flex;
+            justify-content: center;
+            text-align: center;
+            padding-top: 17px;
+            margin-left: 30px;
+        }
+        .a,.r,.s,.p,.k{
+            border-radius: 50%;
+            padding: 8px 12px;
+            font-size: 14px;
+            color: #fff;
+            font-weight: bold;
+            border: 2px solid #fefefe;
+        }
+        .a{
+            background-color: #003d88;
+        }
+        .r{
+            background-color:#c72b50 ;
+            position: relative;
+            right: 8px;
+        }
+        .s{
+            background-color: #5753ea;
+            position: relative;
+            right: 15px;
+        }
+        .p{
+            background-color:#0bac78 ;
+            position: relative;
+            right: 22px;
+        }
+        .k{
+            background-color:#f8fafc ;
+            color: #434954;
+            font-size: 10px;
+            padding: 8px;
+            display: flex;
+            align-items: center;
+            position: relative;
+            right: 29px;
+        }
+        .ratingdiv{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* font-weight: bold; */
+            gap: 5px;
+            padding-top: 7px;
+            /* font-size: 15px; */
+        }
+        .ratingrank>span{
+            color: #003d88;
+            font-weight: bold;
+        }
+        .ratingreview{
+            color: #8a96a9;
+        }
+                             /* whatspp style section */
+        .whatsppdiv{
+            position: fixed;
+            bottom: 30px;
+            right: 25px;
+            font-size: 30px;
+        }
+                     /* categories style section  */
+        .categoriessection{
+            /* border: 1px solid; */
+            background-color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 235px;
+        }
+        .categoryhead{
+            color: #c2274c;
+        }
+        .categorycontent{
+            font-size: 20px;
+            padding: 10px 0px;
+        }
+        .categorycontent>h1>p>span{
+            color: #c2274c;
+        }
+        .redlineimg>img{
+            width: 130px;
+        }
+        .choosediv{
+            color: #1b1129;
+            font-size: 18px;
+            padding-top: 23px;
+        }
+                        /* footer style section */
+        .footersection{
+            /* border: 1px solid; */
+            background-color: #003376;
+        }
+        .footersectioninner{
+            /* border: 1px solid; */
+            display: flex;
+            justify-content: space-around;
+            width: 100%;
+        }
+        .footer1{
+            /* border: 1px solid; */
+            display: flex;
+            width: 41%;
+            padding: 50px 0px 30px 40px;
+            gap: 30px;
+        }
+        .footer2{
+            /* border: 1px solid; */
+            display: flex;
+            gap: 24px;
+            padding: 50px 0px 30px 65px;
+            /* width: 53%; */
+        }
+        .conclusionimg>img{
+            width: 260px;
+            cursor: pointer;
+        }
+        .conclusioncontent>p{
+            color: white;
+            width: 340px;
+            font-size: 19px;
+            line-height: 1.4;
+            margin: 18px 0px 25px 0px;
+        }
+        .followdiv{
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+            margin-bottom: 30px;
+        }
+        .conclusionicon{
+            display: flex;
+            gap: 25px;
+            font: 14px;
+        }
+        .fb , .ttr , .in , .pint , .insta{
+            cursor: pointer;
+        }
+        .footercourses{
+           /* border: 1px solid; */
+           display: flex;
+           flex-direction: column;
+           gap: 30px;
+        }
+        .coursehead{
+            color: white;
+            font-size: 23px;
+            padding-top: 7px;
+            font-weight: bold;
+        }
+        .differentcourse{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            font-size: 18px;
+            color: white;
+            width: 172px;
+        }
+        .differentcoursename{
+            display: flex;
+            gap: 10px;
+            transition: all 0.9s ease
+        }
+         .differentcoursename:hover{
+            color: #bd2852;
+            cursor: pointer;
+         }
+        .Posts{
+            /* border: 1px solid; */
+            width: 53%;
+        }
+        .postname{
+            color: white;
+            font-size: 23px;
+            padding-top: 7px;
+            padding-bottom: 26px;
+            font-weight: bold;
+        }
+        .postexam{
+            display: flex;
+            flex-direction: column;
+            gap: 16px;
+        }
+        .postexamfirst , .postexamsecond{
+            display: flex;
+            gap: 10px;
+        }
+        .postexamimg>a>img{
+            width: 100px;
+            height: 100px;
+            border-radius: 5px;
+            object-fit: cover;
+        }
+        .aboutpostexam>a{
+            text-decoration: none;
+        }
+        .aboutpostexam>a>p{
+            color: white;
+            font-size: 19px;
+            transition: all 0.9s ease;
+        }
+        .aboutpostexam>a>p:hover{
+            color: #bd2852;
+            cursor: pointer;
+        }
+        .datediv{
+            color: #bd2852;
+            font-size: 14px;
+            padding-top: 10px;
+        }
+        .contactus{
+            /* border: 1px solid; */
+            width: 38%;
+        }
+        .contactname{
+            color: white;
+            font-size: 23px;
+            padding-top: 7px;
+            padding-bottom: 26px;
+            font-weight: bold;
+        }
+        .address , .footeremail , .phoneno{
+            display: flex;
+            gap: 16px;
+        }
+        .footeremail , .phoneno{
+            cursor: pointer;
+        }
+        .contactdetail{
+            display: flex;
+            flex-direction: column;
+            color: white;
+            gap: 25px;
+            font-size: 18px;
+        }   
+        .linediv{
+            border: 0.5px solid;
+            width: 94%;
+            margin-left: 41px;
+            opacity: 0.8;
+            color: #164582;
+        }
+        .rightdiv{
+            display: flex;
+            justify-content: center;
+            padding: 16px;
+            color: white;
+            font-size: 18px;
+            text-transform: capitalize;
+        }
+                               /* carrercourse style section  */
+        .carrercoursediv{
+            /* border: 1px solid; */
+            display: flex;
+            flex-direction: column;
+            gap: 17px;
+            padding: 20px 40px 60px 40px;
+            background-image: url("https://acadmiac.com/wp-content/uploads/2025/11/online-academy-category-bg.png");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: 100% 30%;
+        }
+        .firstcarrercourse , .secondcarrercourse{
+            display: flex;
+            gap: 14px;
+            color: #003376;
+            font-weight: bold;
+            font-size: 22px;
+        }
+        .carrerbox{
+            /* border: 1px solid; */
+            background-color: #fff;
+            border-radius: 5px;
+            width: 283px;
+            height: 203px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 26px;
+            box-shadow: 0 0 15px 0 rgba(0, 0, 0, .05)
+        }
+        .carrerbox>span{
+            transition: all 0.4s ease-in-out;
+        }
+        .carrerbox>span:hover{
+            color: #c2274c;
+            cursor: pointer;
+        }
+        .carrericon1{
+            /* border: 1px solid; */
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #5866EB1A;
+            padding: 23px 16px ;
+            transition: all 0.9s;
+        }
+        .carrericon2{
+            /* border: 1px solid; */
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #39C0FA1A;
+            padding: 23px 24px ;
+            transition: all 0.9s;
+        }
+        .carrericon3{
+            /* border: 1px solid; */
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #fee9f4;
+            padding: 22px 15px ;
+            transition: all 0.9s;
+        }
+        .carrericon4{
+            /* border: 1px solid; */
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #f7f3ff;
+            padding: 23px 21px ;
+            transition: all 0.9s;
+        }
+        .carrericon5{
+            /* border: 1px solid; */
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #fbe5fe;
+            padding: 23px 16px ;
+            transition: all 0.9s;
+        }
+        .carrericon6{
+            /* border: 1px solid; */
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #fef2f4;
+            padding: 23px 19px ;
+            transition: all 0.9s;
+        }
+        .carrericon7{
+            /* border: 1px solid; */
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color:#e6faf1;
+            padding: 23px 19px ;
+            transition: all 0.9s;
+        }
+        .carrericon8{
+            /* border: 1px solid; */
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #fef4e8;
+            padding: 20px 15px ;
+            transition: all 0.9s;
+        }
+        .carrericon9{
+            /* border: 1px solid; */
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color:#e8f8f5;
+            padding:22px 15px;
+            transition: all 0.9s;
+        }
+        .carrericon10{
+            /* border: 1px solid; */
+            width: 70px;
+            height: 70px;
+            border-radius: 50%;
+            background-color: #fffaef;
+            padding: 25px 19px;
+            transition: all 0.9s;
+        }
+        .carrerbox:hover .carrericon1 i{
+            color: white  !important;
+        }
+         .carrerbox:hover .carrericon1{
+            background-color:  #5866eb ;
+        }
+        .carrerbox:hover .carrericon2 i{
+            color: white  !important;
+        }
+         .carrerbox:hover .carrericon2{
+            background-color:  #39c0fa ;
+        }
+        .carrerbox:hover .carrericon3 i{
+            color: white  !important;
+        }
+         .carrerbox:hover .carrericon3{
+            background-color:  #f92596 ;
+        }
+        .carrerbox:hover .carrericon4 i{
+            color: white  !important;
+        }
+         .carrerbox:hover .carrericon4{
+            background-color:  #8e56ff ;
+        }
+        .carrerbox:hover .carrericon5 i{
+            color: white  !important;
+        }
+         .carrerbox:hover .carrericon5{
+            background-color:  #da04f8; ;
+        }
+        .carrerbox:hover .carrericon6 i{
+            color: white  !important;
+        }
+         .carrerbox:hover .carrericon6{
+            background-color:  #ee4a62 ;
+        }
+        .carrerbox:hover .carrericon7 i{
+            color: white  !important;
+        }
+         .carrerbox:hover .carrericon7{
+            background-color:  #0ecd73 ;
+        }
+        .carrerbox:hover .carrericon8 i{
+            color: white  !important;
+        }
+         .carrerbox:hover .carrericon8{
+            background-color:  #f8941f ;
+        }
+        .carrerbox:hover .carrericon9 i{
+            color: white  !important;
+        }
+         .carrerbox:hover .carrericon9{
+            background-color:#1ab69d;
+        }
+        .carrerbox:hover .carrericon10 i{
+            color: white  !important;
+        }
+         .carrerbox:hover .carrericon10{
+            background-color:  #f8b81f;
+        }
+          
