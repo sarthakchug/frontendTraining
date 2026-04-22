@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How it execute the code</title>
+</head>
+<body>
+    
+</body>
+<script>
+    
+    // console.log('a: ', a);                  //a:  undefined
+    // var a=10;
+
+    // console.log('b: ', b);           //Uncaught ReferenceError: Cannot access 'b' before initialization
+    // let b=20;
+
+    // console.log(c);        //Uncaught ReferenceError: Cannot access 'c' before initialization
+    // const c=30;
+
+    // show()
+    // function show(){
+    //     console.log ("your name");          //your name
+    // }
+    
+    // let show =()=>{
+    //     console.log("sarthak");                   //sarthak
+    // }
+    // show()
+
+    // var a=10;
+    // function show(){                         // v8 engine-2phase=>1.memoryexecution , 2.code execution
+    //     var b=15;                            // function ek apna alag environment create karaga                                 
+    //     return a+b;
+    // }
+    // var c=show(a);
+    // console.log(c);                                  //25
+    
+
+
+        //lexical scoping ->parent chain banti hai
+
+    // function a (){
+    //     b()
+    //     function b (){
+    //         console.log(x);                        //10
+    //     }
+    // }
+    // var x=10;
+    // a()
+
+</script>
+</html>
