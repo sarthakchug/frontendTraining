@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DOM projects</title>
+  <style>
+    h1{
+      padding-left: 530px;
+    }
+    .maindiv{
+      display: flex;
+      gap: 15px;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body> 
+<!-- Number Controller using javascirpt   -->
+
+  <!-- <h1>Number Controller using javascirpt</h1>
+  <div class="maindiv">
+  <button id="plusbutton">+</button>
+  <button id="scorebutton"></button>
+  <button id="minusbutton">-</button>
+  </div> -->
+
+
+<!-- change content using click -->
+
+  <!-- <h2>javascript can change content</h2>
+  <p id="demo">hello my name is sarthak chug</p>
+  <button id="btn1">Click Me</button>
+  <p id="btn2">Reset</p> -->
+
+<!-- changes the value of the src (source) attribute of an image. -->
+
+  <!-- <h2>The Light Bulb</h2>
+  <button id="bulbon">Turn on the light</button>
+  <img id ="img" src="https://www.freepnglogos.com/uploads/bulb-png/light-bulb-png-transparent-images-png-only-15.png" alt="" width="200px">
+  <button id="bulboff">Turn off the light</button> -->
+
+
+<!-- image change -->
+        <!-- <a id="changeimg" href="https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Hitler_portrait_crop_%28cropped%29%282%29.jpg/500px-Hitler_portrait_crop_%28cropped%29%282%29.jpg">click here</a> -->
+
+
+<!-- input change -->
+        <!-- <input type="text" id="name" placeholder="Enter your name"> -->
+</body>
+
+ <!-- Number Controller using javascirpt -->
+<script>
+  // const plusbutton=document.getElementById("plusbutton");
+  // const scorebutton=document.getElementById("scorebutton");
+  // const minusbutton=document.getElementById("minusbutton");
+  // let score=0;
+  // plusbutton.addEventListener("click" , ()=>{
+  //   if(score<10){
+  //     score+=1;
+  //     scorebutton.innerText=score;
+  //   }else{
+  //     alert("Limit Exceed");
+  //   }
+  // });
+  // minusbutton.addEventListener("click" , ()=>{
+  //   if(score>0){
+  //     score-=1;
+  //     scorebutton.innerText=score;
+  //   }else{
+  //     alert("the value cannnot go below zero");
+  //   }
+  // });
+</script>
+  <!-- change content using click -->
+<script>
+    const btnA=document.getElementById("btn1");
+    const para=document.getElementById("demo");
+    // para.style.display="none";                       //unhide
+    btnA.addEventListener("click",function show(){
+      // para.style.display="none";                       //hide
+      para.innerText="welcome sarthak";
+    });
+    const  btnB=document.getElementById("btn2");
+    btnB.style.border="1px solid";
+    btnB.style.backgroundColor="#efefef";
+    btnB.style.width="50px";
+    btnB.style.textAlign="center";
+    btnB.addEventListener("click",function show(){
+    // para.style.display="block"                         //unhide
+    para.innerText="hello my name is sarthak chug";
+    });
+</script>
+<!-- changes the value of the src (source) attribute of an image. -->
+<script>
+  // const bulbon=document.getElementById("bulbon");
+  // const bulboff=document.getElementById("bulboff");
+  // const img=document.getElementById("img");
+  // bulbon.addEventListener("click",()=>{
+  //   // console.log('bulbon: ', bulbon);
+  //   img.src="https://www.pngkey.com/png/full/101-1014825_yellow-light-bulb-png-clip-art-yellow-light.png"
+  // });
+  // bulboff.addEventListener("click",()=>{
+  //   img.src="https://www.freepnglogos.com/uploads/bulb-png/light-bulb-png-transparent-images-png-only-15.png"
+  // });
+</script>
+<!-- image &input change -->
+<script>
+    // document.getElementById("changeimg").href ="  https://in.images.search.yahoo.com/search/images;_ylt=Awr1QVS1ZvJpZQIAsWG7HAx.;_ylu=Y29sbwNzZzMEcG9zAzEEdnRpZAMEc2VjA3BpdnM-?p=hanuman+ji&fr2=piv-web&type=E210IN826G0&fr=mcafee#id=23&iurl=https%3A%2F%2Fghantee.com%2Fwp-content%2Fuploads%2F2024%2F01%2Fhanuman-ji-wallpaper-hd-1080p-download-for-pc-01-scaled.jpg&action=click"
+    //  document.getElementById("name").placeholder = "your name in CAPITAL letter";
+</script>
+</html>

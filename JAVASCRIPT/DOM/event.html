@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>event</title>
+  </head>
+  <body>
+    <button id="btn">click here to call inner console</button>
+    <button id="remove">click here to remove inner console</button>
+  </body>
+  <script>
+    console.log("welcome");
+    const btn = document.getElementById("btn");
+    // console.log('btn: ', btn);
+    btn.addEventListener("click", function () {
+      const p = document.createElement("p");
+      p.innerText = "click to add p";
+      document.body.appendChild(p);
+      console.log("hello from inside");
+    });
+
+    document.getElementById("remove").addEventListener("click",()=>{
+        console.log("remove logic start from here");
+    //   document.body.remove(p); 
+    })
+
+    console.log("byy");
+  </script>
+</html>
