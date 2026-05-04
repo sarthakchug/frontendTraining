@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events</title>
+</head>
+<body>
+    <!-- // | click     | Jab click kare                 |
+    // | dblclick  | Double click                   |
+    // | mouseover | Mouse le jane par              |
+    // | mouseout  | Mouse hatane par               |
+    // | keydown   | Key press hote hi              |
+    // | keyup     | Key chodne par                 |
+    // | input     | Input field me type karte waqt | // when you type single single key 
+    // | change    | Value change hone par          | // when you remove focus
+    // | submit    | Form submit hone par           | -->
+
+    <!-- <button id="btn">Click Me</button>
+    <input type="text" id="name" placeholder="hello sarthak"> -->
+
+    <!-- <form id="form">
+      <input type="text" id="username" placeholder="Enter name" />
+      <button type="submit">Submit</button>
+    </form> -->
+
+    <!-- event propagation concept example -->
+
+    <!-- <div id="parent" style="padding: 40px; background: lightblue">
+      Parent
+      <button id="child">Click Me</button>
+    </div> -->
+</body>
+<script>
+    // const btn=document.getElementById("btn");
+    // const input=document.getElementById("name");
+    // const username = document.getElementById("username")
+    // const form = document.getElementById("form")
+
+
+    //  document.getElementById("btn").onclick = function(){           //on click method
+    //     alert("button is clicked")
+    // };
+
+    // btn.addEventListener("dblclick", function(){
+    //     console.log("hy")
+    //     alert("clicked")
+    // });
+
+    // btn.addEventListener("mouseover", function () {
+    // //   alert("singleclick")
+    //   console.log("hello");
+      
+    //   btn.style.background = "red";
+    //   btn.style.color = "white";
+    // });
+
+    // btn.addEventListener("mouseout",function(){
+    //   btn.style.background = "none";
+    //   btn.style.border="none"   
+    //   btn.style.color = "black";
+    // });
+
+    // document.addEventListener("keyup",(event)=>{
+    // //   console.log('event: ', event.key);                   //event hona chaye jab bhi kux daba
+    //   console.log("key is pressed");
+    // });
+
+    // document.addEventListener("keydown",(event)=>{
+    // //   console.log('event: ', event.key);                    
+    //   console.log("key is pressed");
+    // });
+
+    //   document.addEventListener("mousemove",(event)=>{
+    //     //   console.log('event: ', event);                       //move hone per event
+    //     //   console.log('x-coordinate: ', event.clientX);         //move x ki taraf chlne per value dega
+    //     //   console.log('y-coordinate: ', event.clientY);         ////move y ki taraf chlne per value dega
+    //   console.log("key is pressed");                               //jasa hi mouse move hoye ye print hoye
+    // });
+    
+    // input.addEventListener("input" , ()=>{
+    //     console.log('input: ', input.value);
+    // });
+
+    // input.addEventListener("change" , ()=>{
+    //     console.log('input: ', input.value);
+    // });
+
+    // form.addEventListener("submit",(event)=>{
+    //     event.preventDefault()    //refresh nahi karaga
+    //     console.log(username.value);
+    //     // alert("form is sumbitted")
+    // });
+
+    // btn.addEventListener("click", function (e) {
+    //   console.log(e.target);                     //body part
+    //   console.log(e.target.value);                 //value
+    //   console.log(e.type);                     //click
+    // });
+
+    // document.addEventListener("click", function(e){
+    //     console.log("X:", e.clientX);            //value x ki
+    //     console.log("X:", e.clientY);            //value y ki
+    // });
+
+    // document.addEventListener("mouseover", function(e){
+    //     console.log("X:", e.clientX);              //value x ki             
+    //     console.log("X:", e.clientY);              //value y ki
+    // });
+
+        //event propagation example script
+
+    // const parent = document.getElementById("parent");
+    // const child = document.getElementById("child");
+
+    // parent.addEventListener("click", () => {
+    //   console.log("Parent clicked");
+    // });
+
+    // child.addEventListener("click", (e) => {
+    //     console.log("Child clicked");
+    //     // e.stopPropagation()
+    // });
+
+    // child.addEventListener("click", (event) => {
+    //   console.log('event: ', event);
+    // //   event.stopPropagation()                //sirf child click per child ko chlayga
+    //   console.log("Child clicked");
+    // });
+
+    // parent.addEventListener("click", () => {
+    //   console.log("Parent capturing");           //upar se niche (parent se child per)
+    // });
+
+
+
+</script>
+</html>

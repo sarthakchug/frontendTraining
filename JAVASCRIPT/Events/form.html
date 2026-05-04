@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Script Form</title>
+</head>
+<body>
+    <form id="form">
+
+    <label for="username" >Your Name:</label>
+    <input type="text" id="username" placeholder="type your name"> 
+    <span id="nameError" style="color: red;"> </span><br><br>
+
+    <label for="userpassword" >Your Password:</label>
+    <input type="password" id="userpassword" placeholder="type your password">
+    <span id="passworderror" style="color: red;"> </span><br><br>
+
+    <input type="submit">
+
+    </form>
+</body>
+<script>
+    const username=document.getElementById("username");
+    const nameError = document.getElementById("nameError")
+    const userpassword=document.getElementById("userpassword");
+    const passworderror =document.getElementById("passworderror")
+    const forms = document.getElementById("form")
+    
+    forms.addEventListener("submit" , (event)=>{
+        // console.log('event: ', event);
+        event.preventDefault()
+        const isvalid = true;
+        if(username.value===""){
+            nameError.innerText="Please enter your name"
+            isvalid = false;
+        }
+        if(userpassword.value.length<6){
+            passworderror.innerText = "password should be of 8 char "
+            isvalid=false;
+        }
+        if(isvalid){
+            alert("your data has been saved");
+        }
+    })
+    
+    //  username.addEventListener("input" , ()=>{          //bar bar print dera
+    //     // console.log('event: ', event);
+    //     // console.log('input: key is pressed ');
+    //     console.log(event.target.value);     
+    //     nameError.innerText=""
+    // })
+
+    username.addEventListener("change" , (event)=>{         //1bar dera print
+        // console.log('event: ', event);
+        // console.log('input: key is pressed ');
+        console.log('username: ' , event.target.value);
+        nameError.innerText=""
+    })
+
+    userpassword.addEventListener("change",(event)=>{  
+        console.log('userpassword: ' , event.target.value);
+        passworderror.innerText=""
+    })
+</script>
+</html>
