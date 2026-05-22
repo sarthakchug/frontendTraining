@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>call back hell</title>
+</head>
+<body>
+    <h1>call back hell</h1>
+</body>
+<script>
+    //inversion of control and call back
+    //agar call back phle hoyga to ye ulta display hoyga
+    // function fetchData(callback) {
+    //     console.log("Data fetched");                 //Data fetched
+    //     callback();
+    // }
+    // function processData(callback) {
+    //     console.log("Data processed");                //Data processed
+    //     callback();
+    // }
+    // function displayData() {
+    //     console.log("Data displayed");               //Data displayed
+    // }
+    // fetchData (function() {
+    //     processData(function() {
+    //         displayData();
+    //     });
+    // });
+    
+     //convert it into a promise
+
+    // function fetchData() {
+    //   return new Promise((resolve, reject) => {
+    //     // console.log("Data fetched");
+    //     resolve("Data fetched");
+    //   });
+    // }
+
+    // function processData() {
+    //   return new Promise((resolve, reject) => {
+    //     // console.log("Data processed");
+    //     resolve("Data processed");
+    //   });
+    // }
+
+    // function displayData() {
+    //   return new Promise((resolve , reject)=>{
+    //     resolve("Data displayed");
+    //   })
+    //   // console.log();
+    // }
+
+    // fetchData()
+    //   .then((res) => {
+    //     console.log('res: ', res);
+    //     return processData();          // data fetched
+    //   })
+    //   .then((res) => {
+    //     console.log('res: ', res);
+    //     return displayData();            // data processed
+    //   })
+    //   .then((res)=>console.log(res))
+    //   .catch((err) => {
+    //     console.log(err);                   // data displayed
+    //   })
+</script>
+</html>

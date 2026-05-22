@@ -1,0 +1,107 @@
+/* Dark mode variables */
+:root {
+  --bg: #ffffff;
+  --text: #333;
+  --card: #fff7f3;
+}
+
+.dark {
+  --bg: #1e1e1e;
+  --text: #f1f1f1;
+  --card: #2c2c2c;
+}
+
+/* Body */
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  transition: all 0.3s ease;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 20px;
+  position: relative;
+}
+
+.toggle-btn {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.toggle-btn:hover {
+  background: #ddd;
+}
+
+/* Container */
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 20px;
+}
+
+/* Form */
+.form-section {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+select, button {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+}
+
+/* Button hover */
+button {
+  background: orange;
+  color: white;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+button:hover {
+  background: #ff7a00;
+  transform: scale(1.05);
+  box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+}
+
+/* Select hover */
+select:hover {
+  border: 1px solid orange;
+  background: #fff3e6;
+}
+
+/* Result */
+#result {
+  margin-top: 20px;
+  display: grid;
+  gap: 10px;
+}
+
+/* Food card */
+.food-card {
+  padding: 15px;
+  background: var(--card);
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
+
+.food-card:hover {
+  transform: translateY(-5px) scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+  background: linear-gradient(135deg, #ffe0cc, #ffd1b3);
+}
+
+/* Dark hover fix */
+.dark .food-card:hover {
+  background: #3a3a3a;
+}

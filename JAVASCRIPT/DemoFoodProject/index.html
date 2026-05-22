@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>AI Food Recommender</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header>
+  <h1>🍔 AI Food Recommender</h1>
+  <p>Select your food preferences</p>
+  <button class="toggle-btn" onclick="toggleDark()">🌙</button>
+</header>
+
+<main class="container">
+
+  <div class="form-section">
+    <label>Food Type:</label>
+    <select id="type">
+      <option>Veg</option>
+      <option>Non-Veg</option>
+    </select>
+
+    <label>Budget:</label>
+    <select id="budget">
+      <option>Low</option>
+      <option>Medium</option>
+      <option>High</option>
+    </select>
+
+    <label>Mood:</label>
+    <select id="mood">
+      <option>Healthy</option>
+      <option>Spicy</option>
+      <option>Junk</option>
+    </select>
+
+    <button id="btn">🍽️ Get Suggestions</button>
+    <button onclick="startVoice()">🎤 Speak</button>
+  </div>
+
+  <div class="result-section">
+    <h2>Suggestions</h2>
+    <div id="result"></div>
+  </div>
+
+</main>
+
+<script src="app.js"></script>
+
+</body>
+</html>
