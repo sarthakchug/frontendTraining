@@ -6,6 +6,17 @@
 // console.log(sayHello());      //hello world
 
 
+      //function follow hoiting with this example
+// console.log("Start");
+// function show(){
+//       console.log("good morning");
+// }
+// console.log(show);                  //[Function: show]
+// console.log("End");
+// show()                       //Start  End  good morning
+// console.log(show());       //undefined    
+
+
            // pass be value example
 // function change(x){
 //     x=50;
