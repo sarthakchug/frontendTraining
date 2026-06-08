@@ -5,6 +5,15 @@
 
 // console.log(sayHello());      //hello world
 
+                // role of return keyword
+// function sum(){
+//       let x=10+20;
+//       return x;
+// }
+// // console.log(sum());     //30
+// let res =sum();
+// console.log(res);         //30
+
 
       //function follow hoiting with this example
 // console.log("Start");
@@ -85,6 +94,25 @@
 //     console.log("Hi");
 // };
 // sayHi();          //Hi
+
+     //
+// function  greet(hello) {
+//   console.log("Hello");
+// };
+// greet("good morning");  
+
+// function greet(msg="hello world") {
+//   console.log("msg");
+// };
+// greet();    
+
+
+// arrow function->
+// const sum =()=>{
+//       return "hello"
+// }
+// console.log("good");    //hello
+
 
 
 
