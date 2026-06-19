@@ -2,7 +2,45 @@
 // console.log('nums: ', typeof nums);   //object
 
 
-          // how to make objects
+        
+// const info= {
+//     address:{
+//         state:{
+//             name:'UK',
+//             city:'dehradun',
+//             pincode:{
+//                 value:'248001'
+//             }
+//         }
+//     }
+// }
+    //how to make nested object
+// console.log(info.address.state.pincode.value);  //248001
+
+   //optional chaining
+// console.log(info?.address?.state?.pincode?.value);  //248001
+
+// let person ={
+//     firstname:"sarthak",
+//     lastname:"chug",
+//     age:"22",
+//     adress:"vikasnagar",
+//     // [institue.name]:"academiac"
+// // }
+
+           //how to access values
+// console.log('person: ', person.firstname);  //person:  sarthak
+// console.log('person: ', person.salary);   //person:  undefined
+
+       // how to add elements
+// person.email="sarthakchug007@gmail.com"
+// console.log('person: ', person);    //email="sarthakchug007@gmail.com"
+
+    //how to update any elemnt
+// person.age="25"
+// console.log('person: ', person);  //age="25"
+
+            // how to make objects
 // const humanbody = {
 //     key:"value" ,
 //     name:"sarthak",
@@ -94,3 +132,64 @@
 // let nums = [1,2,3,4]                                         
 // console.log('nums: ', Array.isArray(student));               //nums:  false
 // console.log(typeof student);                                 //object
+
+// object destructing
+
+// const facultyinfo={
+//     firstname:"sarthak",
+//     faculty:'web tech',
+// }
+// console.log(facultyinfo['firstname']);  //firstname:  sarthak
+// facultyinfo.firstname,
+// facultyinfo.faculty
+
+//object destructure
+
+// const{firstname , faculty}=facultyinfo
+// console.log('firstname: ', firstname);   //firstname:  sarthak
+
+// const {firstname:name , faculty:role , age=10}=facultyinfo
+// console.log('role: ', role);   //role:  web tech
+// console.log('firstname: ', name);  //firstname:  sarthak
+// console.log('age: ', age);  //age:  10
+
+
+
+// const user1={
+//     name:'sarthak',
+//     age:10
+// }
+
+// const user2={
+//     name:'chug',
+//     age:100
+// }
+// const result={...user1 , ...user2}  //spread operator
+// console.log('result: ', result);   //result:  { name: 'chug', age: 100 }
+
+// const res= {...user1}
+// console.log('res: ', res);   //res:  { name: 'sarthak', age: 10 }
+
+// pass by refrence
+// function change(obj){
+//     // let res ={...obj}   //shallow copy
+//     let res =structuredClone(obj)   ////deep copy concept -original ko change nhi kara
+//     res.address.city='vikasnagar'
+//     console.log('res: ', res);      //res:  { name: 'sarthak', age: 10, address: { city: 'vikasnagar' } }
+// }
+
+// const user1={
+//     name:'sarthak',
+//     age:10,
+//     address:{  //deep copy concept
+//         city:'dehradun'
+//     }
+// }
+// change(user1)
+// console.log('user1: ', user1);   //user1:  { name: 'sarthak', age: 10, address: { city: 'vikasnagar' } }
+
+
+//has own property -> true ya false deta ha 
+
+
+
