@@ -16,13 +16,13 @@
 // let c =10;
 // console.log('c: ',typeof c);   //number
 
-let a="10";    //string khete ha agar phle number h  or bad " " ye ha to phle add karaga phr baad m string banyaga (1,2,3,"4",5)=645
-let c= 10;     //nan -not a number
-console.log(a+c);    // it gives 1010     (string sum ko add nhi karta)
-console.log(a-c);    // it gives 0
-console.log(a/c);    // it gives 1
-console.log(c==a);      //true  (checks only number)
-console.log(c===a);     //false  (checks number and type also)
+// let a="10";    //string khete ha agar phle number h  or bad " " ye ha to phle add karaga phr baad m string banyaga (1,2,3,"4",5)=645
+// let c= 10;     //nan -not a number
+// console.log(a+c);    // it gives 1010     (string sum ko add nhi karta)
+// console.log(a-c);    // it gives 0
+// console.log(a/c);    // it gives 1
+// console.log(c==a);      //true  (checks only number)
+// console.log(c===a);     //false  (checks number and type also)
 
 // let name1="sarthak hello good morning"
 // console.log('name1: ', name1);       //name1:  sarthak hello good morning
