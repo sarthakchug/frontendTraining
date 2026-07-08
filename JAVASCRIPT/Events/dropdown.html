@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DropDown List</title>
+</head>
+<body>
+    <button id="btn">Select Fruit ▼</button>
+
+    <ul id="list" style="display: none;   width:120px; padding:10px;">
+        <li>Apple</li>
+        <li>Mango</li>
+        <li>Banana</li>
+    </ul>
+
+    <!-- <button id="btn">Select Fruit ▼</button>
+
+    <ul id="list" style="display: none;">
+        <li>apple</li>
+        <li>mango</li>
+        <li>banana</li>
+    </ul> -->
+</body>
+<script>
+const btn = document.getElementById("btn");
+const list = document.getElementById("list");
+
+// Open/Close Dropdown
+btn.addEventListener("click", (e) => {
+    e.stopPropagation();
+
+    if (list.style.display === "none") {
+        list.style.display = "block";
+    } else {
+        list.style.display = "none";
+    }
+});
+
+// Select Item
+list.addEventListener("click", (e) => {
+    btn.innerText = e.target.innerText + " ▼";
+    // console.log(e.target.remove());
+        console.log(e.target.innerText);
+});
+
+// Click outside = Close
+document.addEventListener("click", () => {
+    list.style.display = "none";
+});
+
+
+// const btn = document.getElementById("btn");
+// const list = document.getElementById("list");
+
+// btn.addEventListener("click", () => {
+//     list.style.display = "block";   // sirf open hoga
+// });
+
+// list.addEventListener("click", (e) => {
+//     btn.innerText = e.target.innerText + " ▼";
+//     // list.style.display = "none";  
+//      // console.log(e.target.remove());
+//         console.log(e.target.innerText);
+// });
+
+
+
+</script>
+</html>

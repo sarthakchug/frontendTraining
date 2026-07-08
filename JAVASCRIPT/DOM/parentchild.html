@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Parent-child Node</title>
+</head>
+<body>
+    <div id="parent">      <!-- _____->is khali space ko text node bolta hai or div ki ginti m ata ha   -->
+        <p id="para">hello</p>
+        <h1 id="head">world</h1>
+        <span id="span">coders</span>
+    </div>
+</body>
+<script>
+    const div =document.getElementById("parent")
+    const p =document.getElementById("para")
+    const h1 =document.getElementById("head")
+    const span =document.getElementById("span")
+
+    // console.log(p.parentNode);    //parent ka uske sara child agye
+    // console.log(p.parentElement);    //parent ka uske sara child agye
+
+    //children
+    // console.log(div.childNodes);  //NodeList(9) [text, comment, text, p#para, text, h1#head, text, span#span, text]
+    // console.log(div.children);   //HTMLCollection(3) [p#para, h1#head, span#span,
+
+    // console.log(div.firstChild);  //#text
+    // console.log(div.firstElementChild);  //<p id="para">hello</p>
+
+    //siblings nodes
+    // console.log(p.nextSibling);   //#text
+    // console.log(p.nextElementSibling);  //<h1 id="head">world</h1>
+
+    // console.log(div.lastChild);    //#text
+    // console.log(div.lastElementChild);    //<span id="span">coders</span>
+    
+    
+
+    
+    
+    
+    
+    
+    
+    
+
+    
+    
+
+
+
+</script>
+</html>
